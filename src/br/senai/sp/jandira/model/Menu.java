@@ -13,8 +13,7 @@ public class Menu {
             System.out.println("*********************** Menu **********************");
             System.out.println(" 1- Cadastrar um novo animal ");
             System.out.println(" 2- listar animais ");
-            System.out.println(" 3- Habitats ");
-            System.out.println(" 4- sair");
+            System.out.println(" 3- sair");
             System.out.println("****************************************************************");
 
             int option = scanner.nextInt();
@@ -26,14 +25,11 @@ public class Menu {
                     break;
 
                 case 2:
-                    System.out.println("future in development.....");
+                    Animais animais1 = new Animais();
+                    animais1.listarAnimais();
                     break;
 
                 case 3:
-                    System.out.println("future in development.....");
-                    break;
-
-                case 4:
                     continuar = false;
                     break;
             }

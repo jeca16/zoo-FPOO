@@ -8,6 +8,8 @@ public class Animais    {
 
     int idade, identificacao;
 
+
+
     Scanner scanner = new Scanner(System.in);
 
     public void cadastrarAnimal(){
@@ -26,5 +28,31 @@ public class Animais    {
         }else {
             System.out.println("Por favor digite uma especie listada!!!");
         }
+
     }
+
+    public void listarAnimais(){
+
+        System.out.println(" Escolha a especie de animal que deseja listar: [1-mamiferos, 2-aves, 3-repteis ");
+
+        int option = scanner.nextInt();
+
+        switch (option){
+            case 1:
+                Mamifero mamifero = new Mamifero();
+                mamifero.listarMamifero();
+                break;
+            case 2:
+                Reptil reptil = new Reptil();
+                reptil.listarReptil();
+                break;
+            case 3:
+                Aves aves = new Aves();
+                aves.listarAves();
+                break;
+        }
+    }
+
+
+
 }
